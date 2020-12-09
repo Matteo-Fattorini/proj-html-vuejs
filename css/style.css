@@ -111,7 +111,7 @@ header .upper .social a {
 
 .jumbotron {
   background-image: url("img/bg-6.jpg");
-  height: 1000px;
+  min-height: 1000px;
   background-position: top;
   background-position-y: 35%;
   background-repeat: no-repeat;
@@ -204,14 +204,13 @@ header .upper .social a {
 
 
 .about {
-    height: 700px;
+    padding: 200px 0;
     background-color: var(--dark-blue);  
 }
 
 .about-content {
     height: 100%;
     color:white;
-    /* padding: 100px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -232,6 +231,7 @@ header .upper .social a {
  font-size: 3rem;
  margin: 70px 0;
  font-weight: 800;
+ display: inline-block;
 }
 
 .about-content p {
@@ -253,8 +253,99 @@ header .upper .social a {
   grid-template-rows: repeat(2, 1fr);
   justify-content: end;
 }
+.about-content .company-perks i {
+  color: var(--green-text);
+  font-size: 1.5rem;
+}
 
 .about-content .company-perks h1 {
-  margin-bottom: 40px;
+  margin: 40px 0;
+  display: inline-block;
+}
+
+
+
+.services {
+  width: 100%;
+  background-color: #eef4ed;
+}
+
+.services-content {
+  padding: 200px 0;
+  display:flex;
+  flex-direction: column;
+}
+
+.services-content .description-container {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.services-content .description {
+  width: 60%;
+}
+.services-content .description h3 {
+  color: var(--light-green-text);
+  text-transform: uppercase;
+}
+.services-content .description h1 {
+  color: var(--dark-blue);
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 20px 0;
+}
+
+.services-content .description h1> span {
+  color: var(--green-text);
+  background-color: rgba(5, 130, 131,0.2);
+}
+
+.services-content .description p{
+  color: grey; 
+  line-height: 30px;
+}
+
+.services-content .description-container button {
+  position: absolute;
+  right: 0;
+  top: 70%;
+  font-weight: 600;
+}
+
+
+.services-content .box-container {
+  display:flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.services-content .box-container .box {
+  min-height: 300px;
+  width: calc((100% / 3) - 15px);
+  background-color: white;
+  border-radius: 10px;
+  padding: 60px;
+  position:relative;
+
+}
+
+.services-content .box-container .box .fa-arrow-right {
+  position:absolute;
+  right:60px;
+
+}
+
+.services-content .box-container i {
+    color: var(--green-text);
+  cursor: pointer;
+}
+
+.services-content .box-container h1 {
+  margin: 20px 0;
+}
+.services-content .box-container p {
+  color:grey;
+  line-height: 25px;
 }
 
