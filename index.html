@@ -24,6 +24,7 @@
     <script defer src="js/main.js" charset="utf-8"></script>
   </head>
   <body>
+    <div class="app">
     <div class="header-background">
       <header class="fixed-width">
         <div class="upper">
@@ -59,12 +60,9 @@
           </div>
 
           <ul>
-            <li>PROVA</li>
-            <li>PROVA</li>
-            <li>PROVA</li>
-            <li>PROVA</li>
-            <li>PROVA</li>
-            <li>PROVA</li>
+            <li v-for="link in dataLinks.header"> <a href="#">
+              {{link}}
+            </a> </li>
           </ul>
           <button class="button">GET IN TOUCH</button>
         </div>
@@ -96,7 +94,7 @@
         <div class="about-content fixed-width">
           <div class="company-description">
             <h3>ABOUT THE NETWORK</h3>
-            <h1><span>The</span> Company</h1>
+            <h1><span class ="color-span">The</span> Company</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
               quos repudiandae. Dignissimos soluta suscipit itaque, nulla quos,
@@ -151,7 +149,7 @@
           <div class="description-container">
             <div class="description">
               <h3>Our Business Area</h3>
-              <h1>Excellence in <span>Services</span></h1>
+              <h1>Excellence in <span class="color-span">Services</span></h1>
               <p>
                 We are leaders in providing consultancy services with a set of
                 cutting-edge technologies and a team of experienced and renowed
@@ -218,6 +216,52 @@
           </div>
         </div>
       </section>
+      <section class="progress-dots">
+        <div class="description">
+              <h3>HOW IT WORKS IN PRACTICE</h3>
+              <h1> <span class="color-span">Process</span> Managament</h1>
+              <p>
+               We work with innovative methodologies to ensure that the entire reformatting process is done <br> from start to finish as planned.
+              </p>
+            </div>
+        <div class="dots-container">
+          <div class="dot">
+            <span class="number hr">01</span>
+            <div class="details">
+              <h1>Strategic Planning</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fuga?</p>
+            </div>        
+        </div>
+          <div class="dot">
+            <span class="number">02</span>
+            <div class="details">
+              <h1>Strategic Planning</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fuga?</p>
+            </div>        
+        </div>
+          <div class="dot">
+            <span class="number">03</span>
+            <div class="details">
+              <h1>Strategic Planning</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fuga?</p>
+            </div>        
+        </div>
+          <div class="dot">
+            <span class="number">04</span>
+            <div class="details">
+              <h1>Strategic Planning</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fuga?</p>
+            </div>        
+        </div>
+          <div class="dot">
+            <span class="number">05</span>
+            <div class="details">
+              <h1>Strategic Planning</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fuga?</p>
+            </div>        
+        </div>
+      </section>
     </main>
+    </div>
   </body>
 </html>

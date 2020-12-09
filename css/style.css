@@ -10,7 +10,7 @@
   --header-background: #21333e;
   --hero-background: #e5e9ea;
   --green-text: #058283;
-  --light-green-text:#45bbbc;
+  --light-green-text: #45bbbc;
   --black-text: #21333e;
   --dark-blue: #111117;
 }
@@ -19,12 +19,18 @@ body {
   font-family: "Roboto", sans-serif;
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
+.fixed-width {
+  width: 60%;
+  margin: auto;
+}
 
-.fixed-width{
-    width: 60%;
-   margin: auto;
+.color-span {
+  color: var(--green-text);
+  background-color: rgba(5, 130, 131, 0.2);
+  padding: 10px;
 }
 
 .button {
@@ -98,7 +104,14 @@ header .upper .social a {
 }
 
 .jumbotron .header-bottom ul li {
- cursor: pointer;
+  cursor: pointer;
+}
+.jumbotron .header-bottom ul a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  text-transform: uppercase;
+  font-style: inherit;
 }
 
 .jumbotron .header-bottom .logo {
@@ -116,139 +129,117 @@ header .upper .social a {
   background-position-y: 35%;
   background-repeat: no-repeat;
   background-size: cover;
-  position:relative;
+  position: relative;
 }
 
-
-
 .jumbotron .user-data-container {
-    transform: translateY(100px);
-    height: 100%;
-    position:relative;
-    
-    
-
+  transform: translateY(100px);
+  height: 100%;
+  position: relative;
 }
 
 .jumbotron .user-data {
-    height: 70%;
-    width: 500px;  
-    position: absolute;
-    right: 0;
-    top: 0;
+  height: 70%;
+  width: 500px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-.jumbotron .user-data h3, .about-content .company-description h3   {
-    color: var(--light-green-text);
-    text-transform: uppercase;
-    font-size: 1rem;
-   
+.jumbotron .user-data h3,
+.about-content .company-description h3 {
+  color: var(--light-green-text);
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 .jumbotron .user-data h1 {
-    color: var(--black-text);
-    font-size: 5rem;
-    font-weight: 800;
-    margin-bottom: 50px;
-    
-   
+  color: var(--black-text);
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 50px;
 }
-
-
 
 .jumbotron .user-data .input-data {
-    height: 150px;
-    display:flex;
-    flex-wrap: wrap;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.jumbotron .user-data .button{
-    font-size: 1.2rem;
-     padding: 10px 35px;
-     font-weight: normal;
-    
+.jumbotron .user-data .button {
+  font-size: 1.2rem;
+  padding: 10px 35px;
+  font-weight: normal;
 }
 
-.jumbotron .user-data .button:last-child{
-   background-color:transparent;
-   border: 1px solid var(--green-text);
-   color: var(--green-text);
-   margin-left: 10px;
+.jumbotron .user-data .button:last-child {
+  background-color: transparent;
+  border: 1px solid var(--green-text);
+  color: var(--green-text);
+  margin-left: 10px;
 }
-
-
 
 .jumbotron .user-data .input-data input {
-    padding: 10px 20px;
-    min-width: 240px;
-    max-height: 45px;
-    min-height: 45px;
-    background-color: lightgrey;
-    border: 0;
-    margin-right: 10px;
-    border-radius: 5px;
+  padding: 10px 20px;
+  min-width: 240px;
+  max-height: 45px;
+  min-height: 45px;
+  background-color: lightgrey;
+  border: 0;
+  margin-right: 10px;
+  border-radius: 5px;
 }
 
-
-.input-data .arrow-down{
-    position:relative;
-    height: 45px;
+.input-data .arrow-down {
+  position: relative;
+  height: 45px;
 }
-.input-data .arrow-down i{
-    position:absolute;
-    right: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.7;
-    cursor: pointer;
+.input-data .arrow-down i {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.7;
+  cursor: pointer;
 }
-
 
 .about {
-    padding: 200px 0;
-    background-color: var(--dark-blue);  
+  padding: 200px 0;
+  background-color: var(--dark-blue);
 }
 
 .about-content {
-    height: 100%;
-    color:white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .about-content > div {
-    flex: 1;
-    height: 60%
+  flex: 1;
+  height: 60%;
 }
 
 .about-content .company-description {
   padding: 0 100px !important;
-  
 }
 
 .about-content .company-description h1 {
- color:#fff;
- font-size: 3rem;
- margin: 70px 0;
- font-weight: 800;
- display: inline-block;
+  color: #fff;
+  font-size: 3rem;
+  margin: 70px 0;
+  font-weight: 800;
+  display: inline-block;
 }
 
 .about-content p {
-    opacity: 0.8;
-    line-height: 25px;
-    font-size: 1.2rem;
+  opacity: 0.8;
+  line-height: 25px;
+  font-size: 1.2rem;
 }
 
-.about-content .company-description h1 span {
-    background-color: rgba(5, 130, 131,0.3);
-    padding: 10px;
-    
-}
-
-
-.about-content .company-perks{
-  display:grid;
+.about-content .company-perks {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   justify-content: end;
@@ -263,8 +254,6 @@ header .upper .social a {
   display: inline-block;
 }
 
-
-
 .services {
   width: 100%;
   background-color: #eef4ed;
@@ -272,7 +261,7 @@ header .upper .social a {
 
 .services-content {
   padding: 200px 0;
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -284,24 +273,22 @@ header .upper .social a {
 .services-content .description {
   width: 60%;
 }
-.services-content .description h3 {
+.services-content .description h3,
+.progress-dots .description h3 {
   color: var(--light-green-text);
   text-transform: uppercase;
 }
-.services-content .description h1 {
+.services-content .description h1,
+.progress-dots .description h1 {
   color: var(--dark-blue);
   font-size: 3rem;
   font-weight: 800;
   margin: 20px 0;
 }
 
-.services-content .description h1> span {
-  color: var(--green-text);
-  background-color: rgba(5, 130, 131,0.2);
-}
-
-.services-content .description p{
-  color: grey; 
+.services-content .description p,
+.progress-dots .description p {
+  color: grey;
   line-height: 30px;
 }
 
@@ -312,13 +299,11 @@ header .upper .social a {
   font-weight: 600;
 }
 
-
 .services-content .box-container {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
-
 
 .services-content .box-container .box {
   min-height: 300px;
@@ -326,18 +311,16 @@ header .upper .social a {
   background-color: white;
   border-radius: 10px;
   padding: 60px;
-  position:relative;
-
+  position: relative;
 }
 
 .services-content .box-container .box .fa-arrow-right {
-  position:absolute;
-  right:60px;
-
+  position: absolute;
+  right: 60px;
 }
 
 .services-content .box-container i {
-    color: var(--green-text);
+  color: var(--green-text);
   cursor: pointer;
 }
 
@@ -345,7 +328,67 @@ header .upper .social a {
   margin: 20px 0;
 }
 .services-content .box-container p {
-  color:grey;
+  color: grey;
   line-height: 25px;
 }
+
+.progress-dots {
+  text-align: center;
+  padding: 200px;
+}
+
+.progress-dots .description h1 {
+  margin: 30px 0 !important;
+}
+
+.progress-dots .dots-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.progress-dots .dots-container .dot {
+  position: relative;
+}
+
+.progress-dots .dots-container .dot .number {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  border-radius: 50%;
+  color: var(--green-text);
+  background-color: lightblue;
+  font-size: 1.5rem;
+}
+
+.progress-dots .dots-container .dot .details {
+  margin-top: 100px;
+}
+
+.progress-dots .dots-container .dot .details h1 {
+  color: var(--black-text);
+  margin-bottom: 10px;
+}
+
+.progress-dots .dots-container .dot .details p {
+  color: grey;
+  line-height: 25px;
+}
+
+
+.dot:first-child::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  width: 200vw;
+  transform: translateX(-450px);
+  height: 10px;
+  background-color: rgba(5, 130, 131, 0.2);
+  z-index: -1;
+}
+
+
 
