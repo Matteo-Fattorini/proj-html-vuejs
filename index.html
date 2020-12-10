@@ -221,7 +221,7 @@
               <h3>HOW IT WORKS IN PRACTICE</h3>
               <h1> <span class="color-span">Process</span> Managament</h1>
               <p>
-               We work with innovative methodologies to ensure that the entire reformatting process is done <br> from start to finish as planned.
+              We work with innovative methodologies to ensure that the entire reformatting process is done <br> from start to finish as planned.
               </p>
             </div>
         <div class="dots-container">
@@ -268,7 +268,7 @@
               <h3>We like what we do</h3>
               <h1> <span class="color-span">Team</span> of Experts</h1>
               <p>
-               Ethics and integrity are based on which our professionals build their careers. They are fundamentals that become daily attitudes.
+              Ethics and integrity are based on which our professionals build their careers. They are fundamentals that become daily attitudes.
               </p>
             </div>
             <div class="photo-album">
@@ -339,7 +339,7 @@
             <div class="speech">
               <h1>President Speech</h1>
               <br>
-               
+            
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam natus impedit provident, aperiam cum quidem ab <br> <br> sed minus dolore facere natus atque enim distinctio voluptate mollitia! Quam odit explicabo atque repudiandae quisquam <br> <br> reprehenderit autem aliquam, fugiat consequuntur repellat ipsum iure adipisci veritatis molestias nemo? </p>
               <h2>T.Johnson</h2>
               <i class="fas fa-quote-right fa-2x"></i>
@@ -370,7 +370,7 @@
         </div>
       </section>
       <section class= subscribe>
-        <div class="subscribe-content fixed-width">
+        <div class="subscribe-content">
           <div class="left-side">
             <div class="description">
               <h3>Newsletter</h3>
@@ -382,14 +382,61 @@
           </div>
           <div class="right-side">
             <form action="">
-             <div><input placeholder="Name" type="text"></div>
-             <div><input placeholder="Email" type="email"> </div> 
+            <div><input placeholder="Name" type="text"></div>
+            <div><input placeholder="Email" type="email"> </div> 
               <button class ="button">SUBSCRIBE</button>
             </form>
           </div>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="pre-footer-content fixed-width">
+        <div class="card">
+          <img src="css/img/logo-alt.png" alt="logo">
+          <div style ="opacity:0.7">A functional HTML Template for Corporate & Business.</div>
+          <div class="contacts">
+            <div class="phone">
+              <i class="fas fa-phone-alt"></i>
+              <span>+1(305)1234-5678</span>
+            </div>
+            <div class="mail"
+              ><i class="fas fa-envelope"></i>
+              <span>hello@example.com</span></div
+            >
+
+          <div class="phone">
+              <i class="fas fa-location-arrow"></i>
+              <span>Main Avenue,987</span>
+            </div>
+          </div>
+
+          <button class ="button">GET IN TOUCH</button>
+        </div>
+        <div class="card">
+          <h1>About</h1>
+          <ul>
+            <li v-for="element in dataLinks.footer.about">
+              <i class="fas fa-chevron-right"></i>
+            <a href="#">{{element}}</a>     </li>
+          </ul>
+        </div>
+        <div class="card"><h1>Services</h1>
+        <li v-for="element in dataLinks.footer.services">
+          <i class="fas fa-chevron-right"></i>
+          <a href="#">{{element}}</a> </li></div>
+        <div class="card"><h1>Support</h1>
+        <li v-for="element in dataLinks.footer.support">
+          <i class="fas fa-chevron-right"></i>
+          <a href="#">{{element}}</a> </li></div>
+      </div>
+    </footer>
+    <div class="bottom-footer">
+        <div class="bottom-footer-content fixed-width">
+          <span>Enjoy the low price. We are tracking any intention of piracy</span>
+          <span>© 2020 NEXGEN is Proudly Powered by <a href="#">Codings</a>. </span>
+        </div>
+    </div>
     </div>
   </body>
 </html>

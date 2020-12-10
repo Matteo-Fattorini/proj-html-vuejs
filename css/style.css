@@ -221,7 +221,7 @@ header .upper .social a {
 }
 
 .about-content .company-description {
-  padding: 0 100px !important;
+  padding:0 100px 0 0 !important
 }
 
 .about-content .company-description h1 {
@@ -276,7 +276,7 @@ header .upper .social a {
 .services-content .description h3,
 .progress-dots .description h3,
 .team-content .left-content .description h3,
-.subscribe .left-side .description h3  {
+.subscribe .left-side .description h3 {
   color: var(--light-green-text);
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -285,7 +285,7 @@ header .upper .social a {
 .services-content .description h1,
 .progress-dots .description h1,
 .team-content .left-content .description h1,
-.subscribe .left-side .description h1  {
+.subscribe .left-side .description h1 {
   color: var(--dark-blue);
   font-size: 3rem;
   font-weight: 800;
@@ -340,7 +340,6 @@ header .upper .social a {
 .services-content .box-container p {
   color: grey;
   line-height: 25px;
-  
 }
 
 .progress-dots {
@@ -496,11 +495,9 @@ header .upper .social a {
   margin-right: 5px;
 }
 
-
 .right-content .speech {
   color: white;
   margin-top: 40%;
-  /* height: 75%; */
   width: 80%;
   border-radius: 10px;
   margin-left: 20%;
@@ -521,32 +518,30 @@ header .upper .social a {
   margin-bottom: 50px;
 }
 
-
-.right-content .speech h2{
-  position:absolute;
+.right-content .speech h2 {
+  position: absolute;
   bottom: 50px;
 }
 
 .right-content .speech i {
   color: darkgreen;
-  position:absolute;
+  position: absolute;
   right: 50px;
   bottom: 50px;
 }
 
 .latest-news .image-container {
-  display:flex;
+  display: flex;
   gap: 50px;
 }
 
-
 .latest-news .image-container .image {
   text-align: center;
-  background-color:red;
+  background-color: red;
   height: 500px;
   width: calc(100% / 3);
   border-radius: 10px;
-   background-color: rgba(0, 0, 0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
@@ -555,16 +550,13 @@ header .upper .social a {
   position: relative;
 }
 
-.latest-news .image-container .image:nth-child(1){
+.latest-news .image-container .image:nth-child(1) {
   background-image: url("img/news-1.jpg");
-  
- 
 }
-.latest-news .image-container .image:nth-child(2){
+.latest-news .image-container .image:nth-child(2) {
   background-image: url("img/news-2.jpg");
-  
 }
-.latest-news .image-container .image:nth-child(3){
+.latest-news .image-container .image:nth-child(3) {
   background-image: url("img/news-3.jpg");
 }
 
@@ -574,7 +566,6 @@ header .upper .social a {
   bottom: 50px;
   right: 25px;
   left: 25px;
-  
 }
 
 .subscribe {
@@ -583,37 +574,35 @@ header .upper .social a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  
-  
-
 }
 
 .subscribe-content {
-  display:flex;
+  display: flex;
+  width: 40%;
+  margin:auto;
 }
 
 .left-side {
   width: 50%;
+  padding: 0 50px
   
 }
 
 .left-side h1 {
-  color: white !important; 
+  color: white !important;
 }
 .left-side .color-span {
-  color: white !important; 
+  color: white !important;
 }
 .right-side {
   width: 50%;
-  display:flex;
+  display: flex;
   flex-direction: column;
-
 }
 
 .right-side input {
- padding: 10px 20px;
-  min-width: 600px;
-  max-height: 45px;
+  padding: 10px 20px;
+  width: 100%;
   min-height: 45px;
   margin-bottom: 30px;
   background-color: rgba(255, 255, 255, 0.4);
@@ -622,5 +611,89 @@ header .upper .social a {
   border-radius: 5px;
 }
 
+footer {
+  background-color: var(--dark-blue);
+  padding: 200px 0;
+}
+
+footer .pre-footer-content {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 20px;
+}
+
+footer .pre-footer-content .card {
+  min-height: 400px;
+  width: calc(100% / 5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(146, 145, 145, 0.1);
+  border-radius: 10px;
+}
+
+footer .pre-footer-content .card h1 {
+  margin-bottom: 40px;
+}
+
+footer .pre-footer-content .card li {
+  white-space: nowrap;
+  opacity: 0.7;
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+
+footer .pre-footer-content .card a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+footer .pre-footer-content .card i {
+  margin-right: 10px;
+}
+
+footer .pre-footer-content .card:first-child {
+  background-color: transparent;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  display: flex;
+}
+footer .pre-footer-content .card:first-child div {
+  margin-bottom: 20px !important;
+}
+
+footer .pre-footer-content .card:first-child span {
+  opacity: 0.7;
+}
+
+footer .pre-footer-content .card img {
+  width: 50%;
+  margin-bottom: 20px;
+  color: white;
+  background-color: white;
+}
+
+.bottom-footer {
+  background-color: black;
+  min-height: 100px;
+  color:white;
+}
+
+.bottom-footer-content {
+  min-height: 100px;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+}
 
 
+.bottom-footer-content a {
+  text-decoration: none;
+  color: var(--green-text)
+}
